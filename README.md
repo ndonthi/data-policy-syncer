@@ -1,2 +1,2 @@
-# data-policy-sync
+# data-policy-syncer
 Update training/eval datasets to reflect policy changes by identifying and re-processing affected data segments with LLM-as-a-judge
