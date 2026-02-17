@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "data-policy-syncer"
+version = "0.1.0"
+description = "Update training/eval datasets to reflect policy changes via LLM-as-a-judge"
+readme = "README.md"
+requires-python = ">=3.9"
+
+[project.scripts]
+data-policy-syncer = "src.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["src", "src.*"]
